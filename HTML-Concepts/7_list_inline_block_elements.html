@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+  </head>
+  <body>
+    <h1>My List</h1>
+
+    <h2>Unordered list</h2>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol type="I">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+    </ol>
+
+    <h2>Nested list</h2>
+
+    <ul>
+      <li>
+        1
+        <ol>
+          <li>H1</li>
+          <li>H2</li>
+          <li>H3</li>
+        </ol>
+      </li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+
+    <h2>Data List</h2>
+
+    <dl>
+      <dt>Ice Tea</dt>
+      <dd>Lemon Ice Tea</dd>
+
+      <dt>Coffee</dt>
+      <dd>Cold Coffee</dd>
+    </dl>
+
+    <h3>Test 1</h3>
+    <p>test 2</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sit
+      doloremque facere accusamus tempora nam eligendi, deleniti iusto
+      exercitationem?<span>test 3</span> Architecto?
+    </p>
+  </body>
+</html>
+
+<!--
+    There are diffrent types of lists,
+
+    1. Unordered lists: starting by ul>li*5 -> gives 5 unordered lists.
+    We mostly use unordered lists in navigation bars footers etc.
+
+    2. Ordered lists: starting by uIn this case browser will know this list has particular order and it's important.
+    it starts by ol>li*4 -> gives 5 ordered lists.
+
+    - Also, there is a attribute present in ordered lists is type. you can configure the type of list.
+
+    Also, there can be nested lists. 
+    3. Data lists: Here we can add data topics, data descriptions
+        starts by dl
+        <dl>
+            <dt>Ice Tea</dt>
+            <dd>Lemon Ice Tea</dd>
+
+            <dt>Coffee</dt>
+            <dd>Cold Coffee</dd>
+        </dl>
+
+    
+    Also, Theres something called block elements and inline elements.
+        <h3>Test 1</h3>
+        <p>test 2</p>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sit
+        doloremque facere accusamus tempora nam eligendi, deleniti iusto
+        exercitationem?<span>test 3</span> Architecto?
+        </p>
+
+        Now lets check in above html which one is block and which one is inline element.
+        for that we just need to inspect elemets and check
+        - if an element takes all the spaces of itself on the page (like a whole row) known as block level element.
+        - Those who doesn't is inline element.
+        -so, in above example we will find Test 1 is block level and test 3 is inline element. 
+-->

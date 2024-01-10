@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media in HTML</title>
+    <style>
+      body {
+        background-color: #414141;
+        color: beige;
+      }
+      /* * {
+        background-color: #238451;
+        color: beige;
+      } */
+    </style>
+  </head>
+  <body>
+    <video src=""></video>
+    <video width="320" height="240" muted autoplay controls>
+      <source src="./video (240p).mp4" />
+    </video>
+    <audio src=""></audio>
+  </body>
+</html>
+
+<!--
+    Basically here we see how we can integrate video and audio in html
+
+    Now basic question comes whats the difference between using iframes and video tags.
+    - When we use video tags that means the video we are integrating is in the same server where our html files are residing.
+    - But when we are using iframe that means our website opens an window through which 3rd party websites are serving contents.
+    That means the load of server is not from our site.
+
+    Video: We can write the syntax like <video src=""></video> or 
+                <video>
+                    <source src="">
+                </video>
+        - Whenever we use video we need to provide hight and width.
+                 <video width="320" height="240" muted autoplay controls>
+                    <source src="./video (240p).mp4" />
+                </video>
+        - In src attribute we provide the file location
+        - autoplay to play automatically and muted to mute the video.
+        - Controls to give control over playback and all in video.
+        
+    Audio: We can write the syntax like <audio src=""></audio>
+        Same as video
+-->

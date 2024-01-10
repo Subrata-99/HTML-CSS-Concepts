@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      body {
+        background-color: #414141;
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form 1</h1>
+    <form action="url" method="GET">
+      <label for="fName">First Name</label>
+      <input type="text" placeholder="first name" name="" id="fName" />
+      <label for="lName">Last Name</label>
+      <input
+        type="text"
+        placeholder="last name"
+        name=""
+        id="lName"
+        autocomplete="off"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<!--
+    Forms are very very important in html. We can neglect many things of html but forms can never be ignored.
+    It doesn't matter how much beautiful our forms are, if their html structure is not right, forms wonn't work.
+
+    Forms are very important in html as through forms user can provide inputs that can be send to servers.
+
+    Bascicaly from element looks like <form action=""></form>
+        - Form elements can have multiple input elements(textarea, buttons) but most importantly
+        we keep in mind all the input elements inside form will be submitted all together. Not like name email number submitted
+        seperately, they will be submitted altogether.
+
+        - action: Now to where the form will be submitted will be decided by action attribute.
+        - method: Now forms are of two types declared by method attribute as "get" and "post"
+            - If we are to submit data to server we mostly prefer post as the data will be encrypted while submitting.
+            - There are also forms where we take data in clear text format, like google seach form (search bar).
+            Here while searching we can see whatever we search can be visible in url params.
+
+        - Now we also have input elements inside form. Let's consider input text now
+            <input type="text" placeholder="first name" name="" id="" />
+            - We know placeholder shows a value until we type anything.
+            - Now here is a problem. Alone input tags works fine but sometimes there are some screen readers
+            or google seach engines to read these where only placeholders won't work.
+            in good practice it's always preferable to have Label tag
+            - Label tag just add a label about the input.
+            - Now when screen readers come and see label tag, it will understand the input box is of that label( First name).
+            Placeholders can not be readable by screen readers.
+            - for attribute: inside label tag let us know with which input box it is associated.
+                If we use the id of input inside for attribute of label, when we click on label, the cursor will automatically
+                point to input box.
+                
+
+        - Button: After input text fields if we use a button that can be used to submit data of those input boxes.
+            - Usually we use submit button for forms. where we use type attribute as "submit".
+            - After providing data inside input fields if we click the submit button, the form will submit.
+            
+        - accept-charset attribute: this is used to define different language characterset
+
+        - autocomplete attribute: This enables to show or hide suggestions automatically while working with input box
+
+        - enctype attribute: While submitting form, We can define if its multi part, text or application type.
+            - text: here we can only use text, no one can add image inside it.
+            - muiti part/ form data: that means different types like image add also accepatble.
+        - novalidate attributes: Used to submit data without validating.(We don't use this anymore)
+        - target:
+-->

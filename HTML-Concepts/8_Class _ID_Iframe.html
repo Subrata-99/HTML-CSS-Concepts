@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        background-color: coral;
+      }
+      #green {
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="red">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
+      ullam!
+    </p>
+    <p id="green">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, nisi!
+    </p>
+    <h1>Test 1</h1>
+    <h3>Test 2</h3>
+
+    <!--iframe example-->
+    <table style="width: 20%">
+      <tr>
+        <th colspan="3">Country</th>
+        <td>India</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <th>Code</th>
+        <td>IN</td>
+        <td>JP</td>
+        <td>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/kAOuj6o7Kxs?si=xZYRKDIuAIDjnJp9"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!--
+    We have two global properties called id and class
+
+    class: Are use to target and select an element.
+    Ids: Are use to target and select an element.
+
+    Now the question is if classes do the same then why do we need ids.
+
+    Id's are mostly used in javascript. When we want reliabilty, all developers come together and made a convension that
+    whenever we need to target an unique element we will provide an unique id to the element and target it. Later it daviates from its purpose
+    and ppl starts to look at it from css perspective and this process failed.
+
+    Now, most modern frameworks don't produce Ids. They produce unique classes. Now , the classes itself become unique
+
+    So, In general in our basic cases classes can be repeatable but we mostly keep unique ids for each elements.
+    
+    
+    ***iframe: It actually loads webpage inside wabpage. It's not necessarily need to be web page.
+       We might want to load youtube video or google map or a small portion of a large page.
+
+       - With Iframe comes security issues so we use as less as possible.
+        right now the policies we use mostly are with videos of video players.
+    
+       - sandbox: This is a important property. It applies extra security or restrictions to the content in the iframe.
+        Basically when we are loading web page inside iframe, malicious page can be loaded. To prevent such properties are introduced.
+-->

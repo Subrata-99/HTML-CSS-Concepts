@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        color: aqua;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 style="text-align: center; background-color: #6e19be1e">
+      Make me center
+    </h3>
+    <p>
+        <blockquote cite="Elon Mask">
+            This is my quote
+        </blockquote>
+        <q>
+            This is my quote
+        </q>
+    </p>
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+    <address>
+        <a href="mailto:jim@rock.com">jim@rock.com</a><br />
+        <a href="tel:+13115552368">(311) 555-2368</a>
+    </address>
+    <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite>
+    <bdo dir="rtl">Subrata</bdo>
+  </body>
+</html>
+
+<!--
+    There are multiple ways to put style in css 
+    1. inline styles:  already h3 tag is using inline styles
+    2. seprate css file: we can use sperate css style and use it inside html by using it inside head tag inside link tag.
+    3. Another way can be using style tag inside head.
+
+    Note: as in above file style tag is introduced after link, so being last called element it will override the style.css files properties.
+    So the priority of using styles depends on where we are calling.
+
+
+    Lets say we need to write a quotation. so for that we are using paragraph.
+    <p>This is my quote</p>
+
+    But for search engine this quote is just a paragraph. So it won't holds much weightage.
+    So, we can instead write,
+    <p>
+        <blockquote>
+            This is my quote
+        </blockquote>
+    </p>
+
+    writing this way won't change much, we can change the css anytime. 
+    But the thing is when we see someones blocked quote in ranked or searched in google, this comes from here.
+
+    -There is also an attribute called cite, for the reference of the quote, it can be website or person or anything
+    Now when someone scrolls through our page, they will know the quote is cited by elon mask
+
+    -There are also abbreviation tag in HTML. Its used to define the abbreviation or short form of an element.
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+
+    -There are also assignment tags like
+    address tag: provides contact information for a person or people, or for an organization.
+    <address>
+        <a href="mailto:jim@rock.com">jim@rock.com</a><br />
+        <a href="tel:+13115552368">(311) 555-2368</a>
+    </address>
+    
+    cite tag: is used to mark up the title of a cited creative work.
+    <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite>
+
+    <bdo tag:  There are some tags used for bidirectional use. Suppose we are working with arab clients and they provide some info that should be read from right to left.
+
+     
+-->

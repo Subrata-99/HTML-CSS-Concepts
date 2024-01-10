@@ -1,0 +1,98 @@
+<!--
+    Long ago, few softwares were famous and among them one was apache2. A simple web software and can be seen in most of the linux systems. Behind all the web pages
+    there was apache software which serves the web pages.
+
+    - Now we used to code html one line by one when we were young but in industry we don't do that.
+    - For fast coding we use a tool called Emmet, it is given the by default in vs code. for other code editor it might need to be downloaded.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML tutorial</title>
+  </head>
+  <body>
+    <h1>heading one</h1>
+    <h2>heading two</h2>
+  </body>
+</html>
+
+<!--
+    We often think in html h1 tags comes with big size whereas h2 comes with smaller size. But is not necessaryly true. Because
+    by using css we can easily make h2 tag bigger than h1 tag.
+
+    Then comes the natural question why using different tags we can simply use p tag for everything and handle style by css.
+
+    We know HTML is a markup language. But we should remember html as syntactical language too, simple and diclarative language.
+    This language helps to make structure of our page. Also there are multiple structured languages like markdown, latex.
+    But browser support for html is the most. Thats why it's so much popular.
+
+    Also, each and every tags of html represents their own importance.
+
+    - h1 doesn't mean heading will be big or h2 doesn't mean heading will be small.
+    - h1 means all the headings of page are core part of the page.
+    - h2 means all the sub headings of page which are second important part of the page.
+    - All the web engines understand these core structures very precisely.
+
+    -For example we can write,
+    <footer>
+        <p>
+            .......
+        </p>
+    </footer>
+
+    So, we can write address inside p tag or even handle footer and place it by css also. Theres no as such problem.
+
+    But, if we write this,
+    <footer>
+        <address>
+            .......
+        </address>
+    </footer>
+    Here we need not to worry about this as google simply understands it's an address tag so it will be easiy for google to list out your address.
+
+    -So, the more we have good understanding of HTML(not for it makes this tag big or this tag small) we can understand the importance of each and every tag and
+    the more it helps us to structure our page in better ways.
+
+    -HTML is case insensitive, means we can write head or HEAD, it won't make any problem.
+
+    Understanging few tags =>
+
+  **<!DOCTYPE html> : At the start of internet there wasn't just HTML, also there were, XML, XHTML, Latex etc. So our document can be any type.
+    So to let browser know the doc type we use it.
+
+  **<html lang="en> : Now ofcourse as html became popular so we can define the language like if its english or hindi or bengali.
+
+  **-Now the most important part and the main structure of html comes with it's two childs head and body
+
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>...</h1>
+    </body>
+
+    - When we go to any web page whatever we see are part of our body tag.
+    - Whatever we write inside head tag, only two things are visible
+        - title
+        - Fav icon (the small icon that can be shown on every tabs)
+   
+  **<meta ... />: We also saw there are meta tags inside head. There are informations that we don't want to show or write on our page
+    but if someone comes to our page like server, engines or bot, they should know.
+    for example:
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML tutorial</title>
+    </head>
+    
+    - in above example we are using charset="UTF-8", there can be others charset too.
+    Like if we want our page to support smiley we can use UTF-16
+
+    - name="viewport" content="width=device-width, initial-scale=1.0", these means,
+        - that means when the page by default renders, what will be the zoom level, how will it look on tablets, websites
+    - For farther knowledge of all meta tags refer to https://developers.google.com/search/docs/crawling-indexing/special-tags
+    
+-->
